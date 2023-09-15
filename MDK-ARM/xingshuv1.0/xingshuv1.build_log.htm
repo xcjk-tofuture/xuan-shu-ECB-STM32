@@ -1,0 +1,100 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 233 lenovo, 233, LIC=8VRJ7-EQA36-UHS8H-WNLLP-BGK9V-4271Y
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.36.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      CMSIS_AGDI.dll V1.33.0.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+F:\Study\hardware\STM32开发\电赛车\xingshuv2.1.1 relasese 7.18 TB6612\MDK-ARM\xingshuv1.0.uvprojx
+Project File Date:  07/23/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'xingshuv1.0'
+compiling motor_proc.c...
+../Peripheral_Proc/inc/motor_proc.h(23): warning:  #1295-D: Deprecated declaration Motor_Encoder_Init - give arg types
+  void Motor_Encoder_Init();
+../Peripheral_Proc/inc/motor_proc.h(25): warning:  #1295-D: Deprecated declaration Motor_Init - give arg types
+  void Motor_Init();
+../Peripheral_Proc/inc/motor_proc.h(28): warning:  #1-D: last line of file ends without a newline
+  #endif
+../MATH_Tools/inc/simplepid.h(17): warning:  #1295-D: Deprecated declaration PID_angelInit - give arg types
+  void PID_angelInit();
+../MATH_Tools/inc/simplepid.h(18): warning:  #1295-D: Deprecated declaration PID_positionInit - give arg types
+  void PID_positionInit();
+..\Peripheral_Proc\src\motor_proc.c(74): warning:  #223-D: function "printf" declared implicitly
+  		printf("num:%d, speed:%.2f, direction: %d\r\n",MotorA.Num, MotorA.Speed, MotorA.direction);
+..\Peripheral_Proc\src\motor_proc.c(55): warning:  #177-D: variable "Count"  was declared but never referenced
+    s16 Count = 0;
+..\Peripheral_Proc\src\motor_proc.c(157): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(MOTORB_IN1_GPIO_Port, MOTORB_IN1_Pin, 0);
+..\Peripheral_Proc\src\motor_proc.c(158): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(MOTORB_IN2_GPIO_Port, MOTORB_IN2_Pin, 0);
+..\Peripheral_Proc\src\motor_proc.c(159): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(MOTORA_IN1_GPIO_Port, MOTORA_IN1_Pin, 0);
+..\Peripheral_Proc\src\motor_proc.c(160): warning:  #188-D: enumerated type mixed with another type
+  	HAL_GPIO_WritePin(MOTORA_IN2_GPIO_Port, MOTORA_IN2_Pin, 0);
+..\Peripheral_Proc\src\motor_proc.c(242): warning:  #188-D: enumerated type mixed with another type
+  							HAL_GPIO_WritePin(MOTORA_IN1_GPIO_Port, MOTORA_IN1_Pin, 1);
+..\Peripheral_Proc\src\motor_proc.c(243): warning:  #188-D: enumerated type mixed with another type
+  							HAL_GPIO_WritePin(MOTORA_IN2_GPIO_Port, MOTORA_IN2_Pin, 0);
+..\Peripheral_Proc\src\motor_proc.c(250): warning:  #188-D: enumerated type mixed with another type
+  							HAL_GPIO_WritePin(MOTORA_IN1_GPIO_Port, MOTORA_IN1_Pin, 0);
+..\Peripheral_Proc\src\motor_proc.c(251): warning:  #188-D: enumerated type mixed with another type
+  							HAL_GPIO_WritePin(MOTORA_IN2_GPIO_Port, MOTORA_IN2_Pin, 1);
+..\Peripheral_Proc\src\motor_proc.c(259): warning:  #188-D: enumerated type mixed with another type
+  							HAL_GPIO_WritePin(MOTORB_IN1_GPIO_Port, MOTORB_IN1_Pin, 0);
+..\Peripheral_Proc\src\motor_proc.c(260): warning:  #188-D: enumerated type mixed with another type
+  							HAL_GPIO_WritePin(MOTORB_IN2_GPIO_Port, MOTORB_IN2_Pin, 1);
+..\Peripheral_Proc\src\motor_proc.c(265): warning:  #188-D: enumerated type mixed with another type
+  							HAL_GPIO_WritePin(MOTORB_IN1_GPIO_Port, MOTORB_IN1_Pin, 1);
+..\Peripheral_Proc\src\motor_proc.c(266): warning:  #188-D: enumerated type mixed with another type
+  							HAL_GPIO_WritePin(MOTORB_IN2_GPIO_Port, MOTORB_IN2_Pin,  0);
+..\Peripheral_Proc\src\motor_proc.c: 19 warnings, 0 errors
+linking...
+Program Size: Code=46268 RO-data=55584 RW-data=368 ZI-data=24960  
+FromELF: creating hex file...
+"xingshuv1.0\xingshuv1.0" - 0 Error(s), 19 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.15.0.pack
+                Keil.STM32F4xx_DFP.2.15.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_xingshuv1.0
+  C:\Users\lenovo\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include
+  C:\Users\lenovo\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.15.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+      Include file:  CMSIS\Core\Include\tz_context.h
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

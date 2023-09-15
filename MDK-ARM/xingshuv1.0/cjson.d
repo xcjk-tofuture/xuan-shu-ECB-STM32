@@ -1,0 +1,10 @@
+xingshuv1.0\cjson.o: ..\MATH_Tools\src\cJSON.c
+xingshuv1.0\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+xingshuv1.0\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+xingshuv1.0\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
+xingshuv1.0\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+xingshuv1.0\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\limits.h
+xingshuv1.0\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\ctype.h
+xingshuv1.0\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\float.h
+xingshuv1.0\cjson.o: ../MATH_Tools/inc/cJSON.h
+xingshuv1.0\cjson.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
